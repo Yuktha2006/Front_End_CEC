@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoring rating</title>
+    <style>
+        body{
+            background-color:rgb(226, 226, 194);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form{
+            
+            margin: 200px;
+            padding: 200px;
+            background-color:rgb(204, 204, 204);
+            border: 2px solid black;
+            border-radius: 20px;
+            font-family: cursive;
+            font-size:larger;
+        }
+        label{
+            text-align:left;
+        }
+        </style>
+    <h1 style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:xxx-large;">Restoring Rating Form</h1>
+    <form action="/submit" method="post">
+    <label for="name">Name</label><br></br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email</label><br></br>
+    <input type="email" id="email" name="email" required><br><br>
+    <h3>How would you rate the restoring?</h3>
+    <label><input type="radio" id="excellent" name="rating" value="excellent" required>Excellent</label><br><br>
+    <label><input type="radio" id="good" name="rating" value="good" required>Good</label><br><br>
+    <label><input type="radio" id="average" name="rating" value="average" required>Average</label><br><br>
+    <label><input type="radio" id="poor" name="rating" value="poor" required>Poor</label><br><br>
+    <label><input type="radio" id="very poor" name="rating" value="very poor" required>Very poor</label><br><br>
+    <h3>Comments</h3>
+    <textarea></textarea required><br><br>
+    <h3>Would you recommend this service?</h3>
+    <label><input type="radio" id="yes" name="recommend" value="yes" required>Yes</label>
+    <label><input type="radio" id="no" name="recommend" value="no" required>No</label><br><br>
+    <h3>Are there any additional suggestions?</h3>
+    <textarea></textarea required><br><br>
+    <button style="color:aliceblue; background-color:rgb(23, 101, 179); font-size: large;"type="submit">Submit</button>
+  
+</head>
+<body>
+    
+</body>
+</html>
