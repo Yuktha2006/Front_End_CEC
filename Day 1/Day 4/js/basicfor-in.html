@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">This text will change</p>
+    <script>
+        const person={
+            name:"Alice",
+            age:25,
+            city:"New York"
+        };
+       //using for-in loop through object 
+       for(let key in person){
+        console.log(key+": "+person[key]);
+       }    
+        document.getElementById("demo").innerText="Hello "+person.name+" ! you are "+person.age+" years old living in "+person.city+".since 2000.";
+    </script>
+</body>
+</html>
